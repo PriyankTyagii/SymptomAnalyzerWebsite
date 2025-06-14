@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <div class='cont'>
+                
+            
+            {% if data[1] > 0.50 %}
+            <h1>YES</h1>
+            
+            {%else%}
+            <h1> NO</h1>
+            
+            {%endif%}
+
+        </div>
+            <h1>acc<br> NO: <span>{{data[0]}}</span> <br>YES: <span>{{data[1]}}</span><br> </h1>
+            
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <a href="/" class='btn'>TEST AGAIN</a>
+
+        </center>
+        
+    </body>
+</html>
